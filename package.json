@@ -3,11 +3,12 @@
   "homepage": "https://abhinavnaman.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "deploy": "npm run build && gh-pages -d out"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",   
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.10",

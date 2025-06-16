@@ -1,4 +1,11 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export', // ✅ this is correct
+  images: {
+    unoptimized: true
+  },
+  basePath: "", // keep empty for Vercel deployment
+};
 
-export default nextConfig;
+module.exports = nextConfig;
