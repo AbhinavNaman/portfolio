@@ -1,31 +1,7 @@
 // components/TechStack.jsx
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-
-const logos = [
-  { name: "React", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Next.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" },
-  { name: "SvelteKit", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" },
-  { name: "React Native", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "Tailwind CSS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
-  { name: "JavaScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  { name: "TypeScript", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-  { name: "Node.js", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { name: "Express", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
-  { name: "MongoDB", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  { name: "PostgreSQL", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-  { name: "Firebase", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
-  { name: "Docker", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-  { name: "Kubernetes", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
-  { name: "AWS", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
-  { name: "Terraform", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
-  { name: "Actions", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
-  { name: "GitLab", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" },
-  { name: "Grafana", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" },
-  { name: "Git", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "C++", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Python", src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-];
+import {logos} from "../data/techstack.js"
 
 export default function TechStack() {
   const containerRef = useRef(null);
@@ -81,9 +57,9 @@ export default function TechStack() {
           {/* Square bubble container */}
           <div
             ref={containerRef}
-            className="relative w-140 h-160 bg-[#161b22] border border-gray-700 rounded-xl overflow-hidden"
+            className="relative hidden md:block w-140 h-160 bg-[#161b22] border border-gray-700 rounded-xl overflow-hidden"
           >
-            {logos.slice(0, 15).map((logo, index) => (
+            {logos.slice(0, 22).map((logo, index) => (
               <img
                 key={index}
                 src={logo.src}
@@ -94,7 +70,7 @@ export default function TechStack() {
           </div>
 
           {/* Grid stack */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {logos.map((logo, index) => (
               <div key={index} className="flex flex-col bg-white rounded-full items-center justify-center text-center w-24 h-24">
                 <img src={logo.src} alt={logo.name} className="w-10 h-10 mb-2" />

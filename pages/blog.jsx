@@ -1,26 +1,22 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
+import { posts } from "@/data/blog";
 
 export default function Blog() {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    fetch("/api/medium")
-      .then((res) => res.json())
-      .then((data) => {
-        if (Array.isArray(data)) setPosts(data);
-        else console.error("Invalid feed format");
-      })
-      .catch((err) => console.error("Failed to fetch blog posts:", err));
-  }, []);
 
   return (
     <main className="bg-[#0d1117] text-white min-h-screen px-6 py-20">
+      <SEO />
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center">Blog Posts</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          Blog Posts
+        </h1>
 
         {posts.length === 0 && (
-          <p className="text-center text-gray-400">No blog posts found or failed to fetch.</p>
+          <p className="text-center text-gray-400">
+            No blog posts found or failed to fetch.
+          </p>
         )}
 
         <div className="grid sm:grid-cols-2 gap-8">
@@ -43,7 +39,9 @@ export default function Blog() {
               />
               <div className="p-5">
                 <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
-                <p className="text-sm text-gray-400 mb-4">{post.contentSnippet}</p>
+                <p className="text-sm text-gray-400 mb-4">
+                  {post.contentSnippet}
+                </p>
                 <span className="text-xs text-gray-500">{post.date}</span>
               </div>
             </motion.a>
@@ -53,6 +51,5 @@ export default function Blog() {
     </main>
   );
 }
-
 
 //service_04siqre

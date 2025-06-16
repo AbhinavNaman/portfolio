@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 import { motion } from "framer-motion";
+import SEO from "@/components/SEO";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "",title:"", message: "" });
@@ -64,6 +65,7 @@ export default function Contact() {
 
   return (
     <main className="bg-[#0d1117] text-white min-h-screen px-6 py-20">
+        <SEO/>
       <div className="max-w-2xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Contact Me</h1>
 

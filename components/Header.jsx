@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { resume_preview, resume_view } from "@/data/resume";
 
 export default function Header() {
 //   const [dark, setDark] = useState(true);
@@ -14,7 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-[#0d1117] border-b border-gray-800 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link href="/" className="text-white font-bold text-lg">
-          Abhinav Naman
+         &lt; Abhinav Naman /&gt;
         </Link>
 
         <nav className="hidden sm:flex gap-6 text-gray-300 text-sm">
@@ -23,25 +24,19 @@ export default function Header() {
           <Link href="/experience" className="hover:underline">Experience</Link>
           <Link href="/blog" className="hover:underline">Blog</Link>
           <Link href="/contact" className="hover:underline">Contact</Link>
-          <Link href="/resume" className="hover:underline">Resume</Link>
+          <Link href="/resume" className="hover:scale-105 border px-2 rounded bg-white text-black">Resume</Link>
         </nav>
 
         <div className="flex items-center gap-4">
           <a
-            href="/Abhinav_Naman_Resume.pdf"
+            href={resume_view}
             download
             className="hidden sm:inline text-xs bg-white text-black font-semibold px-3 py-1 rounded hover:bg-gray-200 transition"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Download CV
           </a>
-
-          {/* <button
-            onClick={() => setDark(!dark)}
-            className="text-white text-lg hover:text-gray-300"
-            aria-label="Toggle dark mode"
-          >
-            {dark ? <FaSun /> : <FaMoon />}
-          </button> */}
         </div>
       </div>
     </header>

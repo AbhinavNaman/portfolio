@@ -6,6 +6,8 @@ export default async function handler(req, res) {
 
     const data = await response.json();
 
+    console.log(data);
+
     if (!data.items || !Array.isArray(data.items)) {
       return res.status(500).json({ error: "No items found in Medium feed" });
     }

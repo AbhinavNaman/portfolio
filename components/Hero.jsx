@@ -6,10 +6,15 @@ import {
   FaEnvelope,
   FaChevronDown,
 } from "react-icons/fa";
+import { resume_preview, resume_view } from "@/data/resume";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
+    <>
+
+    <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-6 z-10">
+      <div className="z-10">
+         
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -17,7 +22,7 @@ export default function Hero() {
         className="text-center max-w-2xl"
       >
         <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4">
-          Abhinav Naman
+          &lt; Abhinav Naman /&gt;
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-400 mb-6">
@@ -50,9 +55,11 @@ export default function Hero() {
         </div>
 
         <a
-          href="/Abhinav_Naman_Resume.pdf"
+          href={resume_view}
           download
           className="inline-block bg-white text-black px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Download Resume
         </a>
@@ -65,6 +72,11 @@ export default function Hero() {
           <FaChevronDown className="animate-bounce" />
         </motion.div>
       </motion.div>
+      </div>
+       <div className="hero-bg" />
+      <div className="hero-bg hero-bg2"/>
+      <div className="hero-bg hero-bg3" />
     </section>
+    </>
   );
 }
