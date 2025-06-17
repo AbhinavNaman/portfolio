@@ -51,7 +51,7 @@ export default function Hero() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/abhinav-naman"
+            href="https://www.linkedin.com/in/abhinav-naman-912789111/"
             target="_blank"
             rel="noreferrer"
           >
