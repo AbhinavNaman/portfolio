@@ -2,6 +2,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import SEO from "@/components/SEO";
 import { projects } from "@/data/projects";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -37,7 +38,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-white"
+                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-white underline"
                   >
                     <FaGithub /> GitHub
                   </a>
@@ -47,7 +48,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-white"
+                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-white underline"
                   >
                     <FaExternalLinkAlt /> Live
                   </a>

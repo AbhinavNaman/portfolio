@@ -24,8 +24,8 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="text-center max-w-2xl"
       >
-         <div className=" p-2 z-10  bg-[#0d1117] mb-4 w-fit  rounded-full text-sm gap-2 rounded-full px-4">
-        <p className="text-gray-400 ">
+         <div className=" p-2 z-12  bg-green-600 mb-4 w-fit  rounded-full text-sm gap-2 rounded-full px-4 shadow-md">
+        <p className="">
         OPEN TO WORK
         </p>
     </div>

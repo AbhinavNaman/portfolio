@@ -1,6 +1,7 @@
 // components/Experience.jsx
 import { motion } from "framer-motion";
 import { experiences } from "@/data/experience";
+import Link from "next/link";
 
 export default function Experience() {
   return (
@@ -31,7 +32,7 @@ export default function Experience() {
                 <div className="flex items-center gap-3 mb-2">
                   <img src={exp.logo} alt={exp.company} className="w-12 h-12 object-contain rounded-full" />
                   <h3 className="text-lg font-semibold">
-                    {exp.role} @ {exp.company}
+                    {exp.role} @ <Link href={exp.link} className="underline">{exp.company}</Link>
                   </h3>
                 </div>
 

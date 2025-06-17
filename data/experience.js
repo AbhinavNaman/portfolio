@@ -10,7 +10,8 @@ export const experiences = [
       "Automated infrastructure monitoring using Terraform and GitHub Actions.",
       "Built CI/CD pipelines enforcing Kubernetes best practices.",
       "Implemented Grafana dashboards for system metrics visibility."
-    ]
+    ],
+    link: "https://www.pluralsight.com/"
   },
   {
     company: "Profile.fyi",
@@ -23,7 +24,8 @@ export const experiences = [
       "Built dynamic UIs with SvelteKit and Tailwind CSS for 35,000+ users.",
       "Integrated backend API features for OG image & email generation.",
       "Contributed to reusable component design & codebase structure."
-    ]
+    ],
+    link: "https://www.linkedin.com/company/profile-fyi"
   },
   {
     company: "Edcults",
@@ -36,11 +38,12 @@ export const experiences = [
       "Engineered React.js and Next.js components for SEO-optimized pages.",
       "Improved load times by 350ms and increased UX scores by 20%.",
       "Worked closely on both frontend and backend modules."
-    ]
+    ],
+    link: "https://www.edcults.com/"
   },
   {
     company: "JOESHH Inc",
-    logo: "/joeshh.png", // Replace with real logo if available
+    logo: "/Joeshh.png", // Replace with real logo if available
     role: "UIUX design Intern",
     date: "Oct 2023 - Dec 2023",
     location: "Bengaluru",
@@ -48,6 +51,7 @@ export const experiences = [
     points: [
       "I worked on a project for Major League Rugby focusing on product design for a responsive website.",
       " Designed 50% of the new UI for the MLR website.",
-    ]
+    ],
+    link: "https://joeshh.com/"
   }
 ];
