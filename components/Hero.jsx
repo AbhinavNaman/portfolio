@@ -6,13 +6,16 @@ import {
   FaEnvelope,
   FaChevronDown,
 } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
 import { resume_preview, resume_view } from "@/data/resume";
 
 export default function Hero() {
   return (
     <>
 
+
     <section className="relative min-h-screen overflow-hidden flex items-center justify-center px-6 z-10">
+      
       <div className="z-10">
          
       <motion.div
@@ -21,6 +24,11 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="text-center max-w-2xl"
       >
+         <div className=" p-2 z-10  bg-[#0d1117] mb-4 w-fit  rounded-full text-sm gap-2 rounded-full px-4">
+        <p className="text-gray-400 ">
+        OPEN TO WORK
+        </p>
+    </div>
         <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4">
           &lt; Abhinav Naman /&gt;
         </h1>

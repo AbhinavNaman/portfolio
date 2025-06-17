@@ -26,7 +26,7 @@ export default function Blog() {
               target="_blank"
               rel="noopener noreferrer"
               key={index}
-              className="block bg-[#161b22] border border-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition"
+              className="block bg-[#161b22] border border-gray-800 rounded-lg overflow-hidden hover:shadow-lg transition hover:scale-101 hover:border-gray-600"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}

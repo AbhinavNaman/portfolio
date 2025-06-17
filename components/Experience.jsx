@@ -8,7 +8,7 @@ export default function Experience() {
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Experience</h2>
 
-        <div className="relative border-l-2 border-gray-700 pl-10">
+        <div className="relative border-l-2 border-gray-700 pl-10  transition-colors">
           {experiences.map((exp, idx) => (
             <motion.div
               key={idx}
@@ -16,7 +16,7 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              className="mb-12 relative"
+              className="mb-12 relative "
             >
               {/* Date label to the left */}
               <div className="absolute left-[-12rem] top-1 text-sm text-gray-400 hidden sm:block w-32 text-right pr-4">
@@ -27,7 +27,7 @@ export default function Experience() {
               <div className="absolute left-[-48px] top-1.5 w-4 h-4 bg-white rounded-full border-2 border-[#0d1117]" />
 
               {/* Main card */}
-              <div className="bg-[#161b22] p-5 rounded-lg shadow-md border border-gray-800">
+              <div className="bg-[#161b22] p-5 rounded-lg shadow-md border border-gray-800 hover:scale-101 hover:border-gray-600">
                 <div className="flex items-center gap-3 mb-2">
                   <img src={exp.logo} alt={exp.company} className="w-12 h-12 object-contain rounded-full" />
                   <h3 className="text-lg font-semibold">

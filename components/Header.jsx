@@ -12,7 +12,7 @@ export default function Header() {
 //   }, [dark]);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0d1117] border-b border-gray-800 shadow-sm">
+    <header className="sticky top-0 border-b z-50 bg-[#0d1117]  border-gray-800 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <Link href="/" className="text-white font-bold text-lg">
          &lt; Abhinav Naman /&gt;

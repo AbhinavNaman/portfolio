@@ -14,7 +14,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-[#161b22] border border-gray-800 p-6 rounded-lg shadow-md"
+              className="bg-[#161b22] border border-gray-800 p-6 rounded-lg shadow-md hover:scale-101 hover:border-gray-600"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
