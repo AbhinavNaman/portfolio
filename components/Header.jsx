@@ -29,7 +29,7 @@ export default function Header() {
 
         <div className="flex items-center gap-4">
           <a
-            href={resume_view}
+            href="/Abhinav-Naman.pdf"
             download
             className="hidden sm:inline text-xs bg-white text-black font-semibold px-3 py-1 rounded hover:bg-gray-200 transition"
             target="_blank"
@@ -37,6 +37,7 @@ export default function Header() {
           >
             Download CV
           </a>
+
         </div>
       </div>
     </header>
