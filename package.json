@@ -21,6 +21,7 @@
     "react-dom": "^19.0.0",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^5.5.0",
+    "react-tooltip": "^5.29.1",
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {

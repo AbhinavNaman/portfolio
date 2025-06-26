@@ -5,7 +5,9 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaChevronDown,
+  FaMapPin,
 } from "react-icons/fa";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import { MdWork } from "react-icons/md";
 import { resume_preview, resume_view } from "@/data/resume";
 
@@ -23,17 +25,29 @@ export default function Hero() {
             <div className=" p-2 z-12  bg-green-600 mb-4 w-fit  rounded-full text-sm gap-2 rounded-full px-4 shadow-md">
               <p className="">OPEN TO WORK</p>
             </div>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 " data-tooltip-id="my-tooltip-1" variant="info">
               &lt; Abhinav Naman /&gt;
             </h1>
+
+            <ReactTooltip
+        id="my-tooltip-1"
+        place="top"
+        content="Abhi_Nav"
+      />
 
             <p className="text-xl md:text-2xl text-gray-400 mb-6">
               Full Stack Developer & DevOps Enthusiast
             </p>
 
+            <p className="text-xl md:text-2xl text-gray-400 mb-6 flex justify-center items-center gap-2">
+            <FaMapPin /> Bengaluru
+            </p>
+
+            
+
             <p className="text-gray-400 text-md md:text-lg mb-6">
               Passionate about building scalable apps and automating
-              infrastructure. Currently diving deep into AI and RAG.
+              infrastructure.
             </p>
 
             <div className="flex items-center justify-center gap-6 mb-6 text-2xl text-white">
