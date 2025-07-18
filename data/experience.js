@@ -1,5 +1,18 @@
 export const experiences = [
   {
+    company: "EVALLO DIGITAL PRODUCTS,",
+    logo: "/evallo.jpeg",
+    role: "Full Stack Engineer (FTE)",
+    date: "July 2025 - Present",
+    location: "Bengaluru",
+    stack: ["React.js", "Tailwind", "Node.js", "Express.js", "MongoDB"],
+    points: [
+      "Working with MERN stack, currently fixing frontend bugs and stabilizing the platform.",
+      "Building features for custom projects and shipping to prod"
+    ],
+    link: "https://evallo.ai/"
+  },
+  {
     company: "Pluralsight",
     logo: "/PS.png",
     role: "DevOps Intern",
