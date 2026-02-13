@@ -1,9 +1,25 @@
 export const experiences = [
+    {
+    company: "Source Asia Pvt. Ltd.",
+    logo: "/sa.jpeg",
+    role: "Founding Software Engineer (FTE)",
+    date: "Sept 2025- Present",
+    location: "Bengaluru",
+    stack: ["GoLang (Gin)", "Mosquitto (MQTT - Pub/Sub)", "Next.js","Postgres", "Azure"],
+    points: [
+      "DesignedandimplementedscalablebackendservicesusingGo(Gin)following aclean controller–service–repository architecture.Ensured API consistency with DTOs, error handling, and standardized success/error responses.",
+      "Developed REST APIs for hierarchical entities (Clients → Units → Departments) with optimized database queries using GORM and PostgreSQL.",
+      "Integrated IoT event ingestion pipeline using MQTT, handling real-time bin/machine events with retry logic, backoff, and fault tolerance.",
+      "Worked on event consumers, background processors, and graceful shutdowns for high-reliability services.",
+      "Collaborated on production-grade features including authentication middleware, pagination, filtering, and audit ready data models."
+    ],
+    link: "https://www.linkedin.com/company/source-asia"
+  },
   {
     company: "EVALLO DIGITAL PRODUCTS,",
     logo: "/evallo.jpeg",
     role: "Full Stack Engineer (FTE)",
-    date: "July 2025 - Present",
+    date: "July 2025 - Sept 2025",
     location: "Bengaluru",
     stack: ["React.js", "Tailwind", "Node.js", "Express.js", "MongoDB"],
     points: [
