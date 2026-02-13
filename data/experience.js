@@ -1,7 +1,7 @@
 export const experiences = [
     {
     company: "Source Asia Pvt. Ltd.",
-    logo: "/sa.jpeg",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCn8aq9QXXD3dHuUonccoy2KtMfBmn4nFuWA&s",
     role: "Founding Software Engineer (FTE)",
     date: "Sept 2025- Present",
     location: "Bengaluru",
